@@ -9,12 +9,8 @@
 ![Repo Size](https://img.shields.io/github/repo-size/zikri-codes/Password-Generator-ZPP-III)
 ![Last Commit](https://img.shields.io/github/last-commit/zikri-codes/Password-Generator-ZPP-III)
 
----
-
 ## 📌 Description
 A simple project to generate random passwords with customizable length. The password can include lowercase letters, uppercase letters, numbers, and symbols.
-
----
 
 ## ✨ Features
 - **Choose** password length
@@ -23,13 +19,9 @@ A simple project to generate random passwords with customizable length. The pass
 - **Copy** password to clipboard
 - **Download** password into file txt
 
----
-
 ## 📸 Screenshot
 
 <img src="screenshot.jpg" alt="Display Screenshot" width="500"/>
-
----
 
 ## 📁 Project Structure
 
@@ -46,5 +38,3 @@ A simple project to generate random passwords with customizable length. The pass
 ## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](https://github.com/zikri-codes/Password-Generator-ZPP-III/blob/main/LICENSE) file for details.
-
-"
