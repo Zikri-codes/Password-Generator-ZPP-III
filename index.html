@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <title>Password Generator</title>
+</head>
+<body>
+  <div class="ratio-1x1 m-auto" style="max-width: 40em;">
+    <div class="container d-flex justify-content-center align-items-center flex-column min-vh-100">
+      <h1 class="fw-bold mb-3 text-uppercase text-center">Password generator</h1>
+      <label class="fw-bold">Password Length</label>
+      <input type="number" class="form-control" id="v9uaqZKHi">
+      <label class="fw-bold">Password</label>
+      <input type="password" class="form-control" id="olvbp9IY7" readonly>
+      <div class="d-flex flex-column justify-content-center align-items-center gap-2 w-100 mt-4">
+        <button class="btn btn-outline-dark text-uppercase fw-bold w-100" id="hrvzA3ixt">show password</button>
+        <button class="btn btn-dark text-uppercase fw-bold w-100" id="nETk9YSKo">copy</button>
+        <button class="btn btn-primary text-uppercase fw-bold w-100" id="tMo2m7XDi">download</button>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const prAoWgdUZ = document.getElementById('hrvzA3ixt')
+      const W8z4DKDwS = document.getElementById('v9uaqZKHi')
+      const rJcETJCkd = document.getElementById('olvbp9IY7')
+      const uXh0G7VpS = document.getElementById('nETk9YSKo')
+      const jXfOaiLbN = document.getElementById('tMo2m7XDi')
+      
+      function iFl07LUXk (lz3qUpP07) {
+        const H1Loi5kEN = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        const b3mKglelN = 'abcdefghijklmnopqrstuvwxyz'
+        const iWMtko7z1 = '0123456789'
+        const nfOYb7dgs = "!\"#$%&'()*+,-./:;<=>?@[]^_`{|}~"
+        
+        const aD9maGaiw = H1Loi5kEN + b3mKglelN + iWMtko7z1 + nfOYb7dgs
+        let eCTzmqQNt = ''
+        
+        for (let wDV6Y7qs8 = 0; wDV6Y7qs8 < lz3qUpP07; wDV6Y7qs8++) {
+          eCTzmqQNt += aD9maGaiw[~~(Math.random() * aD9maGaiw.length)]
+        }
+        return eCTzmqQNt
+      }
+      
+      prAoWgdUZ.addEventListener("click", k2n4Kyv2R => {
+        k2n4Kyv2R.preventDefault()
+        if (rJcETJCkd.type === 'password') {rJcETJCkd.type = 'text'}
+        else {rJcETJCkd.type = 'password'}
+        if (prAoWgdUZ.textContent === 'show password') {prAoWgdUZ.textContent = 'hide password'}
+        else {prAoWgdUZ.textContent = 'show password'}
+      })
+      W8z4DKDwS.addEventListener("input", pLfimmur4 => {
+        const hLgqprM1o = parseInt(pLfimmur4.target.value, 10)
+        rJcETJCkd.value = iFl07LUXk(hLgqprM1o)
+      })
+      uXh0G7VpS.addEventListener("click", async () => {
+        if (!rJcETJCkd.value) {alert('failed to copy: nothing could copied'); return}
+        try {await navigator.clipboard.writeText(rJcETJCkd.value); alert('copied!')}
+        catch (err) {alert('failed to copy:', err)}
+      })
+      jXfOaiLbN.addEventListener("click", () => {
+        if (!rJcETJCkd.value) {alert('failed to make the file: empty file'); return}
+        try {
+          const zPXsc7pvN = new Blob([rJcETJCkd.value], { type: "text/plain"})
+          const z1FcsQEge = URL.createObjectURL(zPXsc7pvN)
+          const oyFU9qvDs = document.createElement('a')
+          oyFU9qvDs.href = z1FcsQEge
+          oyFU9qvDs.download = 'Password-Generator.txt'
+          document.body.appendChild(oyFU9qvDs)
+          oyFU9qvDs.click()
+          document.body.appendChild(oyFU9qvDs)
+          URL.revokeObjectURL(z1FcsQEge)
+        } catch (err) {alert('failed to make the file:', err)}
+      })
+    })
+    
+    // i know there's no selecting combination system
+    // its bc im lazy lol :3
+    // Zikri practice project - III
+    
+  </script>
+</body>
+</html>
