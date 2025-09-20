@@ -27,7 +27,7 @@ A simple project to generate random passwords with customizable length. The pass
 
 ## 📸 Screenshot
 
-<img src="screenshot.png" alt="Display Screenshot" width="500"/>
+<img src="screenshot.jpg" alt="Display Screenshot" width="500"/>
 
 ---
 
