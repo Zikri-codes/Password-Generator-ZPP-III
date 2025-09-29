@@ -1,6 +1,6 @@
  🔑 Password Generator
 
-**ZPP** (Zikri Practice Project) Series **II**
+**ZPP** (Zikri Practice Project) Series **III**
 
 ![HTML](https://img.shields.io/badge/HTML-orange?logo=html5)
 ![CSS](https://img.shields.io/badge/Bootstrap-purple?logo=bootstrap)
